@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "EcruApOJDis6EvA4ExNWmH/3qCj7OqyFUEiTWBKuSbvopDYmvHrctqE7dq+5KuYcB6octYOlzeyE+fgfVOv1jQ==",
+  "dgSpecHash": "cCDIPL4xjC6SAVQl2OW9ZINoOOvsn5C0lbtZnP1MLY/K4CIAbRhl9MiiRIiPZl2oJEFfMKMMiMbIzUSc3V46Pw==",
   "success": true,
-  "projectFilePath": "D:\\dev\\projects\\net\\Pharmacy\\Pharmacy.Common\\Pharmacy.Common.csproj",
+  "projectFilePath": "D:\\Pharmacy\\Pharmacy.Common\\Pharmacy.Common.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\alexandr.liubimov\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

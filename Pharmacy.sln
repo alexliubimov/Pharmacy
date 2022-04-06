@@ -5,7 +5,11 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy.Common", "Pharmacy.Common\Pharmacy.Common.csproj", "{AFF2A628-DC72-4EA1-A65C-E91EB74B11D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.Domain", "Pharmacy.Domain\Pharmacy.Domain.csproj", "{90AE6F4D-19C1-433D-9BB0-B5E69C137F1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy.Domain", "Pharmacy.Domain\Pharmacy.Domain.csproj", "{90AE6F4D-19C1-433D-9BB0-B5E69C137F1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.EventStore", "Pharmacy.EventStore\Pharmacy.EventStore.csproj", "{B29D790A-BC77-4714-ABAD-206B66A48056}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.Kafka", "Pharmacy.Kafka\Pharmacy.Kafka.csproj", "{12538119-354A-4247-82FD-6BD4146F134A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{90AE6F4D-19C1-433D-9BB0-B5E69C137F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90AE6F4D-19C1-433D-9BB0-B5E69C137F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90AE6F4D-19C1-433D-9BB0-B5E69C137F1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B29D790A-BC77-4714-ABAD-206B66A48056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B29D790A-BC77-4714-ABAD-206B66A48056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B29D790A-BC77-4714-ABAD-206B66A48056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B29D790A-BC77-4714-ABAD-206B66A48056}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12538119-354A-4247-82FD-6BD4146F134A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12538119-354A-4247-82FD-6BD4146F134A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12538119-354A-4247-82FD-6BD4146F134A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12538119-354A-4247-82FD-6BD4146F134A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
