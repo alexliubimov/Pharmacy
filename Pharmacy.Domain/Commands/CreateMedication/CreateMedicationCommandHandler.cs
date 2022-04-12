@@ -27,7 +27,7 @@ namespace Pharmacy.Domain.Commands.CreateMedication
                 throw new ArgumentOutOfRangeException(nameof(CreateMedicationCommand.PharmacyId), "invalid pharmacy id");
             }
 
-            var medication = Medication.Create(Guid.NewGuid(), pharmacy, notification.Name, notification.PackSize, notification.PacksCount);
+            var medication = Medication.Create(notification.Id, pharmacy, notification.Name, notification.PackSize, notification.PacksCount);
 
             await _pharmacyEventsService.PersistAsync(pharmacy);
             await _medicationEventsService.PersistAsync(medication);

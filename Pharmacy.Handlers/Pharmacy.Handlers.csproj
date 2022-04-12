@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.1" />
+    <PackageReference Include="MongoDB.Driver" Version="2.15.0" />
+    <PackageReference Include="Scrutor" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Pharmacy.Common\Pharmacy.Common.csproj" />
+    <ProjectReference Include="..\Pharmacy.Data\Pharmacy.Data.csproj" />
+    <ProjectReference Include="..\Pharmacy.Domain\Pharmacy.Domain.csproj" />
+    <ProjectReference Include="..\Pharmacy.Persistence.Mongo\Pharmacy.Persistence.Mongo.csproj" />
+    <ProjectReference Include="..\Pharmacy.Query.Core\Pharmacy.Query.Core.csproj" />
+  </ItemGroup>
+
+</Project>

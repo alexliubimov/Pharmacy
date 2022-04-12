@@ -11,6 +11,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.EventStore", "Phar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.Kafka", "Pharmacy.Kafka\Pharmacy.Kafka.csproj", "{12538119-354A-4247-82FD-6BD4146F134A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.Web.API", "Pharmacy.Web.API\Pharmacy.Web.API.csproj", "{C6C486AF-7D9D-43EA-B2D7-89565E2034F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.Query.Core", "Pharmacy.Query.Core\Pharmacy.Query.Core.csproj", "{D2AD0E27-E5BA-41B2-B0E6-CE6152674A9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.Persistence.Mongo", "Pharmacy.Persistence.Mongo\Pharmacy.Persistence.Mongo.csproj", "{5FA2F303-4201-42B7-A91B-FC0D4ABFFB52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.Data", "Pharmacy.Data\Pharmacy.Data.csproj", "{674784ED-C21A-4A41-AABB-CF859E3FFB9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.Handlers", "Pharmacy.Handlers\Pharmacy.Handlers.csproj", "{9958A7FA-B41D-4BE2-8A69-503CF053E240}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +43,26 @@ Global
 		{12538119-354A-4247-82FD-6BD4146F134A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12538119-354A-4247-82FD-6BD4146F134A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12538119-354A-4247-82FD-6BD4146F134A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6C486AF-7D9D-43EA-B2D7-89565E2034F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6C486AF-7D9D-43EA-B2D7-89565E2034F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6C486AF-7D9D-43EA-B2D7-89565E2034F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6C486AF-7D9D-43EA-B2D7-89565E2034F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2AD0E27-E5BA-41B2-B0E6-CE6152674A9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2AD0E27-E5BA-41B2-B0E6-CE6152674A9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2AD0E27-E5BA-41B2-B0E6-CE6152674A9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2AD0E27-E5BA-41B2-B0E6-CE6152674A9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FA2F303-4201-42B7-A91B-FC0D4ABFFB52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FA2F303-4201-42B7-A91B-FC0D4ABFFB52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FA2F303-4201-42B7-A91B-FC0D4ABFFB52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FA2F303-4201-42B7-A91B-FC0D4ABFFB52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{674784ED-C21A-4A41-AABB-CF859E3FFB9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{674784ED-C21A-4A41-AABB-CF859E3FFB9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{674784ED-C21A-4A41-AABB-CF859E3FFB9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{674784ED-C21A-4A41-AABB-CF859E3FFB9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9958A7FA-B41D-4BE2-8A69-503CF053E240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9958A7FA-B41D-4BE2-8A69-503CF053E240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9958A7FA-B41D-4BE2-8A69-503CF053E240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9958A7FA-B41D-4BE2-8A69-503CF053E240}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

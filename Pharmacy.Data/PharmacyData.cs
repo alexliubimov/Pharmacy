@@ -1,23 +1,22 @@
-﻿using MediatR;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pharmacy.Domain.Commands.CreatePharmacy
+namespace Pharmacy.Data
 {
-    public record CreatePharmacyCommand : INotification
+    public record PharmacyData
     {
         public Guid Id { get; init; }
         public string Name { get; init; }
         public string Address { get; init; }
 
-        public CreatePharmacyCommand(Guid id, string name, string address)
+        public PharmacyData(Guid id, string name, string adress)
         {
             Id = id;
             Name = name;
-            Address = address;
+            Address = adress;
         }
     }
 }

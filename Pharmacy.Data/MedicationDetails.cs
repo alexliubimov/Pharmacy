@@ -1,27 +1,28 @@
-﻿using MediatR;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pharmacy.Domain.Commands.CreateMedication
+namespace Pharmacy.Data
 {
-    public record CreateMedicationCommand : INotification
+    public record MedicationDetails
     {
         public Guid Id { get; init; }
         public Guid PharmacyId { get; init; }
         public string Name { get; init; }
-        public int PackSize { get; init; }
         public int PacksCount { get; init; }
+        public int PackSize { get; init; }
+        public string PharmacyName { get; init; }
 
-        public CreateMedicationCommand(Guid id, Guid pharmacyId, string name, int packSize, int packsCount)
+        public MedicationDetails(Guid id, Guid pharmacyId, string name, int packsCount, int packSize, string pharmacyName)
         {
             Id = id;
             PharmacyId = pharmacyId;
             Name = name;
-            PackSize = packSize;
             PacksCount = packsCount;
+            PackSize = packSize;
+            PharmacyName = pharmacyName;
         }
     }
 }

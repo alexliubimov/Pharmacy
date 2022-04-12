@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="Scrutor" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Pharmacy.Common\Pharmacy.Common.csproj" />
+    <ProjectReference Include="..\Pharmacy.Data\Pharmacy.Data.csproj" />
+    <ProjectReference Include="..\Pharmacy.Domain\Pharmacy.Domain.csproj" />
+    <ProjectReference Include="..\Pharmacy.EventStore\Pharmacy.EventStore.csproj" />
+    <ProjectReference Include="..\Pharmacy.Handlers\Pharmacy.Handlers.csproj" />
+    <ProjectReference Include="..\Pharmacy.Kafka\Pharmacy.Kafka.csproj" />
+    <ProjectReference Include="..\Pharmacy.Persistence.Mongo\Pharmacy.Persistence.Mongo.csproj" />
+    <ProjectReference Include="..\Pharmacy.Query.Core\Pharmacy.Query.Core.csproj" />
+  </ItemGroup>
+
+</Project>

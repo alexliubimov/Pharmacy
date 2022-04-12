@@ -18,7 +18,7 @@ namespace Pharmacy.Domain.Commands.CreatePharmacy
 
         public async Task Handle(CreatePharmacyCommand notification, CancellationToken cancellationToken)
         {
-            var pharmacy = Pharmacy.Create(Guid.NewGuid(), notification.Name, notification.Address);
+            var pharmacy = Pharmacy.Create(notification.Id, notification.Name, notification.Address);
 
             await _pharmacyEventsService.PersistAsync(pharmacy);
 
