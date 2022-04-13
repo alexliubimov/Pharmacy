@@ -2,6 +2,7 @@
 using System.Net;
 using MediatR;
 using Pharmacy.Common.Serialization;
+using Pharmacy.Domain.Commands.CreatePharmacy;
 using Pharmacy.Domain.DomainEvents;
 using Pharmacy.Handlers;
 
@@ -30,28 +31,14 @@ namespace Pharmacy.Web.API
             services.AddScoped<ServiceFactory>(ctx => ctx.GetRequiredService);
             services.AddScoped<IMediator, Mediator>();
 
-            /*
+            
             services.Scan(scan =>
             {
-                scan.FromAssembliesOf(typeof(CreateCustomer))
+                scan.FromAssembliesOf(typeof(CreatePharmacyCommand))
                     .RegisterHandlers(typeof(IRequestHandler<>))
                     .RegisterHandlers(typeof(IRequestHandler<,>))
                     .RegisterHandlers(typeof(INotificationHandler<>));
             });
-            */
-            /*
-            services.AddProblemDetails(opts =>
-            {
-                opts.IncludeExceptionDetails = (ctx, ex) =>
-                {
-                    var env = ctx.RequestServices.GetRequiredService<IHostEnvironment>();
-                    return env.IsDevelopment() || env.IsStaging();
-                };
-
-                opts.MapToStatusCode<ArgumentOutOfRangeException>((int)HttpStatusCode.BadRequest);
-                opts.MapToStatusCode<ValidationException>((int)HttpStatusCode.BadRequest);
-                opts.MapToStatusCode<AccountTransactionException>((int)HttpStatusCode.BadRequest);
-            });*/
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

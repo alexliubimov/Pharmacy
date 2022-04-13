@@ -46,7 +46,7 @@ namespace Pharmacy.Web.API.Controllers
             var command = new CreateMedicationCommand(Guid.NewGuid(), pharmacyId, dto.Name, dto.PackSize, dto.PacksCount);
             await _mediator.Publish(command, cancellationToken);
 
-            return CreatedAtAction("GetMedicationByIdAsync", new { id = command.Id }, command);
+            return Ok(command.Id);
         }
 
         [HttpPatch("{medicationId}/dispense")]

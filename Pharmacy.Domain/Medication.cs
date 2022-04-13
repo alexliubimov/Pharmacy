@@ -44,6 +44,7 @@ public record Medication : BaseAggregateRoot<Medication, Guid>
         {
             case MedicationEvents.MedicationCreated c:
                 this.Id = c.AggregateId;
+                this.Name = c.Name;
                 this.PharmacyId = c.PharmacyId;
                 this.PackSize = c.PackSize;
                 this.PacksCount = c.PacksCount;

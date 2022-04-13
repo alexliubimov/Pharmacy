@@ -32,6 +32,8 @@ namespace Pharmacy.Domain.Commands.CreateMedication
             await _pharmacyEventsService.PersistAsync(pharmacy);
             await _medicationEventsService.PersistAsync(medication);
 
+            var med = await _medicationEventsService.RehydrateAsync(medication.Id);
+
             var @event = new MedicationCreated(Guid.NewGuid(), medication.Id);
             await _eventProducer.DispatchAsync(@event, cancellationToken);
         }

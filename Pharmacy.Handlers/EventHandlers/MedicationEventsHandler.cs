@@ -26,12 +26,12 @@ namespace Pharmacy.Handlers.EventHandlers
 
         public async Task Handle(MedicationCreated notification, CancellationToken cancellationToken)
         {
-            await RehydrateAndSaveMedicationViewAsync(notification.Id, cancellationToken);
+            await RehydrateAndSaveMedicationViewAsync(notification.MedicationId, cancellationToken);
         }
 
         public async Task Handle(MedicationAmountUpdated notification, CancellationToken cancellationToken)
         {
-            await RehydrateAndSaveMedicationViewAsync(notification.Id, cancellationToken);
+            await RehydrateAndSaveMedicationViewAsync(notification.MedicationId, cancellationToken);
         }
 
         private async Task RehydrateAndSaveMedicationViewAsync(Guid medicationId, CancellationToken cancellationToken)

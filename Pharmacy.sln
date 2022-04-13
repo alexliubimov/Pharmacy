@@ -7,19 +7,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy.Common", "Pharmacy
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy.Domain", "Pharmacy.Domain\Pharmacy.Domain.csproj", "{90AE6F4D-19C1-433D-9BB0-B5E69C137F1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.EventStore", "Pharmacy.EventStore\Pharmacy.EventStore.csproj", "{B29D790A-BC77-4714-ABAD-206B66A48056}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy.EventStore", "Pharmacy.EventStore\Pharmacy.EventStore.csproj", "{B29D790A-BC77-4714-ABAD-206B66A48056}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.Kafka", "Pharmacy.Kafka\Pharmacy.Kafka.csproj", "{12538119-354A-4247-82FD-6BD4146F134A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy.Kafka", "Pharmacy.Kafka\Pharmacy.Kafka.csproj", "{12538119-354A-4247-82FD-6BD4146F134A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.Web.API", "Pharmacy.Web.API\Pharmacy.Web.API.csproj", "{C6C486AF-7D9D-43EA-B2D7-89565E2034F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy.Web.API", "Pharmacy.Web.API\Pharmacy.Web.API.csproj", "{C6C486AF-7D9D-43EA-B2D7-89565E2034F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.Query.Core", "Pharmacy.Query.Core\Pharmacy.Query.Core.csproj", "{D2AD0E27-E5BA-41B2-B0E6-CE6152674A9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy.Query.Core", "Pharmacy.Query.Core\Pharmacy.Query.Core.csproj", "{D2AD0E27-E5BA-41B2-B0E6-CE6152674A9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.Persistence.Mongo", "Pharmacy.Persistence.Mongo\Pharmacy.Persistence.Mongo.csproj", "{5FA2F303-4201-42B7-A91B-FC0D4ABFFB52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy.Persistence.Mongo", "Pharmacy.Persistence.Mongo\Pharmacy.Persistence.Mongo.csproj", "{5FA2F303-4201-42B7-A91B-FC0D4ABFFB52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.Data", "Pharmacy.Data\Pharmacy.Data.csproj", "{674784ED-C21A-4A41-AABB-CF859E3FFB9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy.Data", "Pharmacy.Data\Pharmacy.Data.csproj", "{674784ED-C21A-4A41-AABB-CF859E3FFB9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.Handlers", "Pharmacy.Handlers\Pharmacy.Handlers.csproj", "{9958A7FA-B41D-4BE2-8A69-503CF053E240}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pharmacy.Handlers", "Pharmacy.Handlers\Pharmacy.Handlers.csproj", "{9958A7FA-B41D-4BE2-8A69-503CF053E240}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pharmacy.Events.Worker", "Pharmacy.Events.Worker\Pharmacy.Events.Worker.csproj", "{943C1E64-36B5-4337-90E3-E92D87742D46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{9958A7FA-B41D-4BE2-8A69-503CF053E240}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9958A7FA-B41D-4BE2-8A69-503CF053E240}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9958A7FA-B41D-4BE2-8A69-503CF053E240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{943C1E64-36B5-4337-90E3-E92D87742D46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{943C1E64-36B5-4337-90E3-E92D87742D46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{943C1E64-36B5-4337-90E3-E92D87742D46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{943C1E64-36B5-4337-90E3-E92D87742D46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

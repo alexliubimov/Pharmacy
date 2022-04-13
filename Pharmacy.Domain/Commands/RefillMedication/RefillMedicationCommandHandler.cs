@@ -22,6 +22,8 @@ namespace Pharmacy.Domain.Commands.RefillMedication
 
             medication.Refill(notification.PacksAmount);
 
+            await _medicationEventsService.PersistAsync(medication);
+
             var @event = new MedicationAmountUpdated(Guid.NewGuid(), notification.MedicationId);
             await _eventProducer.DispatchAsync(@event, cancellationToken);
         }

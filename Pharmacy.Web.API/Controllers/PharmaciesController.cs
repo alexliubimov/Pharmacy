@@ -73,7 +73,7 @@ namespace Pharmacy.Web.API.Controllers
             var command = new CreatePharmacyCommand(Guid.NewGuid(), dto.Name, dto.Address);
             await _mediator.Publish(command, cancellationToken);
 
-            return CreatedAtAction("GetPharmacyByIdAsync", new { id = command.Id }, command);
+            return Ok(command.Id);
         }
     }
 }
